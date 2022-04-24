@@ -8,6 +8,8 @@
  */
 :root {
   --blue: #007bff;
+  --ffBlue: #005CA9;
+  --ffRed: #FF0000;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -12014,11 +12016,6 @@ a[data-toggle="collapse"] {
 
 /* #endregion */
 
-
-.content{
-
-  
-}
 
 
 footer{

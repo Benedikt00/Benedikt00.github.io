@@ -1,1 +1,92 @@
 @import "../../css/style.css";
+
+.header{
+	margin-top: -13vh;
+	position: fixed;
+	display: flex;
+	height: 13vh;
+	width: 100%;
+	background-image: url('../../images/header.jpg');
+	background-repeat: no-repeat;
+	z-index: 100;
+	background-size: cover;
+	
+
+}
+
+.header p{
+	line-height: 13vh;
+	font-family: 'Calibri';
+	font-size: 7vh;
+	width: 100%;
+	text-align: center;
+	color: var(--ffRed);
+	font-weight: bold;
+}
+
+body{
+	padding-top: 13vh;
+}
+
+
+
+
+
+
+#wappen{
+	width: 100%;
+	background-image: url('../../images/wappen.png');
+	height: 184px;
+	margin-bottom: 10px;
+}
+
+
+#content{
+	max-height: calc(100vh - 13vh)
+}
+
+
+
+
+#kommandant{
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+}
+
+#kommandant-text{
+	width: 100%;
+}
+
+
+#kommandant-pic{
+	background-image: url("../../images/Kommando/kommandant.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	right: 10px;
+	background-position: center;
+	background-size: cover;
+}
+
+
+#kommandantstv{
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	text-align: right;
+}
+
+#kommandantstv-text{
+	width: 100%;
+}
+
+#kommandantstv-pic{
+	background-image:url("../../images/Kommando/kommandantstv.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	left: 10px;
+	background-position: center;
+	background-size: cover;
+}
+
+
