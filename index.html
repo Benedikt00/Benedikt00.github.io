@@ -9,14 +9,25 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="index.css">
-  
+
 </head>
 
 <body>
-
+  <header>
+    <div class="header">
+      <img id="hPic" src="images/header.jpg">
+      <div id="hWrap">
+        <img src="images/wappen.png">
+      <p id="HeadP">
+        Freiwillige Feuerwehr Neumarkt
+      </p>
+    </div>
+    </div>
+  </header>
+  <!-- #region Navbar -->
   <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar">
       <div class="custom-menu">
@@ -32,22 +43,23 @@
             <a href="index.html">Startseite</a>
           </li>
           <li>
-          <a href="#mannschaftSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mannschaft</a>
-          <ul class="collapse list-unstyled" id="mannschaftSubmenu">
-            <li>
-              <a href="pages/Mannschaft/kommando.html">Kommando</a>
-            </li>
-            <li>
-              <a href="pages/Mannschaft/ausschuss.html">Ausschuss</a>
-            </li>
-            <li>
-              <a href="pages/Mannschaft/beauftragte.html">Beauftragte</a>
-            </li>
-            <li>
-              <a href="pages/Mannschaft/mitglieder.html">Mitglieder</a>
-            </li>
-          </ul>
-        </li>
+            <a href="#mannschaftSubmenu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Mannschaft</a>
+            <ul class="collapse list-unstyled" id="mannschaftSubmenu">
+              <li>
+                <a href="pages/Mannschaft/kommando.html">Kommando</a>
+              </li>
+              <li>
+                <a href="pages/Mannschaft/ausschuss.html">Ausschuss</a>
+              </li>
+              <li>
+                <a href="pages/Mannschaft/beauftragte.html">Beauftragte</a>
+              </li>
+              <li>
+                <a href="pages/Mannschaft/mitglieder.html">Mitglieder</a>
+              </li>
+            </ul>
+          </li>
           <li>
             <a href="pages/fuhrpark.html">Fuhrpark</a>
           </li>
@@ -69,7 +81,8 @@
           </li>
 
           <li>
-            <a href="#ruesthausSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Rüsthaus</a>
+            <a href="#ruesthausSubmenu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Rüsthaus</a>
             <ul class="collapse list-unstyled" id="ruesthausSubmenu">
               <li>
                 <a href="pages/Rüsthaus/umbau.html">Umbau</a>
@@ -113,20 +126,33 @@
 
       </div>
     </nav>
+    <!-- #endregion -->
 
     <!-- Page Content  -->
     <div id="content" class="p-4 p-md-5 pt-5">
-        <p id="überschrift">Hello World</p>
+      <div id="BildUebergang">
+        <img src="images/images_startseite/Bild 1.jpg" alt="img" />
+        <img src="images/images_startseite/Bild 2.jpg" alt="img" />
+        <img src="images/images_startseite/Bild 3.jpg" alt="img" />
+        <img src="images/images_startseite/Bild 4.jpg" alt="img" />
+        <img src="images/images_startseite/Bild 5.jpg" alt="img" />
+        <img src="images/images_startseite/Bild 6.jpg" alt="img" />
+    </div>
+
     </div>
   </div>
 
   <footer>
     <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
-    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> Made possible <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    <p>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;
+      <script>document.write(new Date().getFullYear());</script> Made possible <i class="icon-heart"
+        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    </p>
 
-</footer>
+  </footer>
 
 
   <script src="js/jquery.min.js"></script>
