@@ -26,6 +26,7 @@
 
 body{
 	padding-top: 13vh;
+	
 }
 
 
@@ -52,6 +53,7 @@ body{
 	display: flex;
 	width: 100%;
 	overflow: hidden;
+	
 }
 
 #kommandant-text{
