@@ -54,6 +54,7 @@ body {
     background-color: rgb(165, 165, 165);
     -webkit-box-shadow: 6px 6px 5px -2px rgba(0,0,0,0.33); 
     box-shadow: 6px 6px 5px -2px rgba(0,0,0,0.33);
+    cursor: pointer;
 
 }
 
@@ -68,6 +69,7 @@ body {
     margin: 0;
     background-image: url(MTF-A/title.jpg);
     overflow: hidden;
+    
      
 }
 
