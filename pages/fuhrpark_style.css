@@ -34,3 +34,90 @@ body{
 	height: 184px;
 	margin-bottom: 10px;
 }
+
+.ueberschrift{
+	width: 100%;
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+	font-size: 5vh;
+}
+
+#FuhrparkWrapper{
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	padding-top: 20px;
+}
+
+#fuhrparkWrapper > div {
+	flex: 1; /*grow*/
+	
+  }
+
+.fuhrparkTeil{
+	width: 33%;
+	height: 100%;
+	margin: 0.5vw;
+	padding: 0.5vw;
+	background-color: rgb(168, 168, 168);
+	color: black;
+}
+
+.fuhrparkTeil:hover{
+	background-color: rgb(136, 136, 136);
+	
+	cursor: pointer;
+}
+
+#FahrzeugeW{
+	float: left;
+	
+}
+
+#WABs{
+	float: middle;
+	
+}
+
+#Anhaenger{
+	float: right;
+
+}
+
+#FahrzeugeW-bild{
+	height: 70%;
+	width: 100%;
+}
+
+#WABs-bild{
+	height: 70%;
+	width: 100%;
+}
+
+#Anhaenger-bild{
+	height: 70%;
+	width: 100%;
+}
+
+
+.FhText{
+	height: 30%;
+	width: 100%;
+	vertical-align: middle;
+	font-size: 40px;
+	text-align: center;
+}
+
+#Anhaenger-text{
+
+
+}
+
+#FahrzeugeW-text{
+
+}
+
+#WABs-text{
+
+}
