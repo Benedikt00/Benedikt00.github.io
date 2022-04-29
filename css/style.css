@@ -12033,7 +12033,7 @@ footer p a{
 .header{
 	margin-top: -13vh;
 	position: fixed;
-	display: flex;
+	/* display: flex; */
 	height: 13vh;
 	width: 100%;
 	background-repeat: no-repeat;

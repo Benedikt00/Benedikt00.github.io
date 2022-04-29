@@ -26,14 +26,19 @@
 	height: 100%;
 	margin: 0.5vw;
 	padding: 0.5vw;
-	background-color: rgb(168, 168, 168);
+	background-color:rgb(255, 255, 255);
 	color: black;
+	position: relative;
 }
 
 .fuhrparkTeil:hover{
-	background-color: rgb(136, 136, 136);
-	
+	background-color: rgb(240, 240, 240);
 	cursor: pointer;
+	-webkit-box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.21); 
+	box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.21);
+	left: -2px;
+	top: -2px;
+	
 }
 
 #FahrzeugeW{
@@ -74,9 +79,12 @@
 	height: 30%;
 	width: 100%;
 	vertical-align: middle;
+	padding-top: 10%;
 	font-size: 40px;
 	text-align: center;
 }
+
+
 
 #Anhaenger-text{
 
@@ -89,4 +97,9 @@
 
 #WABs-text{
 
+}
+
+.vertical {
+	border-left: 3px solid grey;
+	height: 103%;
 }
