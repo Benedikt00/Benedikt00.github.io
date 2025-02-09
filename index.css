@@ -1,103 +1,187 @@
-@import "css/style.css";
-
-
-@media only screen and (max-width: 640px){
-
-	.header p{
-		visibility: hidden;
-	}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#content {
-	background-color: rgb(255, 255, 255);
-}
+html,
+body {
+    margin: 0 auto;
 
-/* #region  Bildübergang */
-
-
-
-#BildUebergang {
-	position: relative;
-	background-image: url('images/images_startseite/Bild 2.jpg');
-	align-items: center;
-	background-size: cover;
-	display: flex;
-	height: 50vh;
-	overflow: hidden;
-	top: 30px;
 
 }
 
-#BildUebergang img {
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-	height: auto;
-	transform: scale(1.4) rotate(12deg);
-	opacity: 0;
-	backface-visibility: hidden;
-	animation: BildUebergang 24s infinite;
-	background: #000;
-	object-fit: scale-down;
-	animation-delay: 5s;
+#main{
+    margin: 0 auto;
+    margin-top: 2vw;
+
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-#BildUebergang img:nth-child(3) {
-	animation-delay: 8s;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003785;
+    color: #fff;
+    height: 60vh;
 }
 
-#BildUebergang img:nth-child(2) {
-	animation-delay: 12s;
+.header .h_left{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    align-items: flex-start;
 }
 
-#BildUebergang img:nth-child(1) {
-	animation-delay: 10s;
+#title{
+    text-align: right;
+    margin-right: 2vw;
+    width: auto;
+    color: #fff;
+
 }
 
-@-moz-keyframes BildUebergang {
-	25% {
-		opacity: 1;
-		transform: scale(1) rotate(0);
-	}
+#title hr{
+    color: #fff;
 
-	40% {
-		opacity: 0;
-	}
 }
 
-@-webkit-keyframes BildUebergang {
-	25% {
-		opacity: 1;
-		transform: scale(1) rotate(0);
-	}
-
-	40% {
-		opacity: 0;
-	}
+#title h1{
+    
 }
 
-@-o-keyframes BildUebergang {
-	25% {
-		opacity: 1;
-		transform: scale(1) rotate(0);
-	}
-
-	40% {
-		opacity: 0;
-	}
+#title h3{
+    margin-top: 5px;
 }
 
-@keyframes BildUebergang {
-	25% {
-		opacity: 1;
-		transform: scale(1) rotate(0);
-	}
 
-	40% {
-		opacity: 0;
-	}
+.header .h_right{
+    display: flex;
+    width: 50%;
+    align-items: center;
 }
 
-/* #endregion */
+.vl {
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 80%;
+  }
 
+  .h_right{
+    padding: 2vw;
+  }
+
+/* Main container for scrolling */
+.container {
+    width: 100%;
+    background-color: beige;
+    margin-top: 2vh;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw;
+}
+
+
+
+.lef_lef {
+    width: 47%;
+    height: auto;
+    background-color: rgb(220, 220, 178);
+    padding: 1vw;
+    padding-top: 2vw;
+    color: white;
+    text-align: left;
+    
+    
+}
+
+.lef_lef p{
+    margin-top: 2vw;
+
+    
+}
+
+.lef_rig{
+    width: 47%;
+    height: auto;
+    background-color: rgb(183, 255, 0);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.rig_lef{
+    width: 45%;
+    height: auto;
+    
+}
+
+.rig_rig{
+    width: 45%;
+    height: auto;
+}
+
+
+  .lef_rig img {
+    display: none;
+    width: 100%;
+  }
+
+  .lef_rig button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .lef_rig button:nth-of-type(1) {
+    left: 10px;
+  }
+
+  .lef_rig button:nth-of-type(2) {
+    right: 10px;
+  }
+
+/* Snap-enabled sections */
+#mp_hardware,
+#mp_software {
+    
+    height: 100vh;
+    /* Full viewport height */
+    scroll-snap-align: start; 
+    /* Snap at the start of each section */
+}
+
+#mp_hardware {
+    background-color: bisque;
+}
+
+#mp_software {
+    background-color: aqua;
+}
+
+/* The rest of the sections (normal scroll behavior) */
+#wk,
+#pp {
+    scroll-snap-align: unset;
+    min-height: 70vh;
+    /* Give them enough height but not 100vh */
+}
+
+#wk {
+    background-color: lightcoral;
+}
+
+#pp {
+    background-color: lightgreen;
+}
 
