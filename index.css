@@ -11,7 +11,7 @@ body {
 
 }
 
-#main{
+#main {
     margin: 0 auto;
     margin-top: 2vw;
 
@@ -19,7 +19,7 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,14 +29,14 @@ body {
     height: 60vh;
 }
 
-.header .h_left{
+.header .h_left {
     display: flex;
     flex-direction: row-reverse;
     width: 50%;
     align-items: flex-start;
 }
 
-#title{
+#title {
     text-align: right;
     margin-right: 2vw;
     width: auto;
@@ -44,21 +44,19 @@ body {
 
 }
 
-#title hr{
+#title hr {
     color: #fff;
 
 }
 
-#title h1{
-    
-}
+#title h1 {}
 
-#title h3{
+#title h3 {
     margin-top: 5px;
 }
 
 
-.header .h_right{
+.header .h_right {
     display: flex;
     width: 50%;
     align-items: center;
@@ -67,24 +65,41 @@ body {
 .vl {
     border-left: 2px solid rgb(255, 255, 255);
     height: 80%;
-  }
+}
 
-  .h_right{
+.h_right {
     padding: 2vw;
-  }
+}
 
 /* Main container for scrolling */
 .container {
     width: 100%;
     background-color: beige;
     margin-top: 2vh;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-between;
     padding: 1.5vw;
 }
 
+#afss_cont {
+    flex-wrap: wrap;
 
+}
+
+#lgv_afss {
+    width: 100%;
+    background-color: rgb(220, 220, 178);
+    padding: 1vw;
+    margin-top: 2vh;
+    color: white;
+
+
+}
+
+#lgv_afss h3 {
+    margin-bottom: 1vw;
+}
 
 .lef_lef {
     width: 47%;
@@ -94,19 +109,21 @@ body {
     padding-top: 2vw;
     color: white;
     text-align: left;
-    
-    
+
 }
 
-.lef_lef p{
+.lef_lef p {
     margin-top: 2vw;
 
-    
+
+
 }
 
-.lef_rig{
+.lef_rig {
+    margin: auto 0;
     width: 47%;
     height: auto;
+    max-height: 44vh;
     background-color: rgb(183, 255, 0);
     overflow: hidden;
     display: flex;
@@ -116,24 +133,16 @@ body {
 
 }
 
-.rig_lef{
-    width: 45%;
-    height: auto;
-    
-}
-
-.rig_rig{
-    width: 45%;
-    height: auto;
-}
 
 
-  .lef_rig img {
+
+.lef_rig img {
     display: none;
     width: 100%;
-  }
 
-  .lef_rig button {
+}
+
+.lef_rig button {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -141,47 +150,91 @@ body {
     padding: 10px;
     cursor: pointer;
     z-index: 10;
-  }
+}
 
-  .lef_rig button:nth-of-type(1) {
+.lef_rig button:nth-of-type(1) {
     left: 10px;
-  }
+}
 
-  .lef_rig button:nth-of-type(2) {
+.lef_rig button:nth-of-type(2) {
     right: 10px;
-  }
+}
 
 /* Snap-enabled sections */
-#mp_hardware,
-#mp_software {
+.slider-container {
+    width: 100%;
+    background-color: beige;
+    margin-top: 2vh;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw;
+    align-items: center ;
+
+}
+
+.slider-container .slider-button{
+    height: 4vh;
+    margin: auto 0;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.slider-container .slider-button:hover{
+    background-color: rgb(255, 255, 255);
     
-    height: 100vh;
-    /* Full viewport height */
-    scroll-snap-align: start; 
-    /* Snap at the start of each section */
 }
 
-#mp_hardware {
-    background-color: bisque;
+.slide{
+    width: 100%;
+    height: auto;
+
+    padding: 1.5vw;
+    display: none;
 }
 
-#mp_software {
-    background-color: aqua;
+#slide1 {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw;
+    
 }
 
-/* The rest of the sections (normal scroll behavior) */
-#wk,
-#pp {
-    scroll-snap-align: unset;
-    min-height: 70vh;
-    /* Give them enough height but not 100vh */
+#slide1 #s1_tx{
+    width: 47%;
+    
 }
 
-#wk {
-    background-color: lightcoral;
+#s1_tx h3{
+    margin-bottom: 1vw;
 }
 
-#pp {
-    background-color: lightgreen;
+#slide1 #pv_img{
+    width: 47%;
+    display: flex;
+    align-items: center;
+
 }
 
+#slide1 img {
+    width: 100%;
+}
+#slide3{
+    flex-direction: column;
+
+}
+
+#slide3 h3{
+    margin-bottom: 1.5vw;
+}
