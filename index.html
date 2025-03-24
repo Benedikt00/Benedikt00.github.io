@@ -156,31 +156,58 @@
       <button class="slider-button" id="next">›</button>
     </div>
 
+
+
+    <div id="outer_ib-cont">
+      <div class="slider-container_ib">
+
+        <button class="slider-button_ib" id="prev_ib">‹</button>
+        <div class="slider-content_ib">
+          <div class="slide_ib" id="slide2_ib">
+            <div class="slide_txt">
+              <h4>USB-PD für Milwaukee 12V Akkus</h4>
+            <p>Da ich sowieso schon Akkus mithführe, bietet es sich an, diese als Powerbank verwenden zu können, vor allem um mobil einen Lötkolben betreiben zu können. Zu diesem Zweck wurde ein Adapter Gedruckt der auf Milwaukee 12V passt und Spannung für die USB-Power-Delivery Platiene zur verfügung stellt.</p>
+            
+          </div>
+            
+            <img src="images/mpd.jpg" alt="">
+          </div>
+          <div class="slide_ib" id="slide3_ib">
+            <div class="slide_txt">
+            <h4>Werkzeugkoffer Adapter für Milwaukee Packout</h4>
+              
+            <p>Um die Platzlimitierungen des Werkzeugkoffers zu umgehen, sollen noch externe Module mitgeführt werden können. Deshab wird eine Vorrichtung gebaut, welche die Montage von Milwaukee Packout Koffern erlaubt. Dieser hat einerseits den typischen Packout Adapter und anererseits eine Auflage für den Werkzeugkoffer und kann somit einen festen Sitz ohne großen Fixierungsaufwand sicherstellen.</p>
+            </div>
+            <div class="lef_rig" id="slide_img_ib">
+              <img src="/images/packout.png">
+              <img src="/images/mp-a.jpg">
+              <img src="/images/mpb.jpg">
+              <img src="/images/mpc.jpg">
+
+            </div>
+          </div>
+
+        </div>
+        <button class="slider-button_ib" id="next_ib">›</button>
+      </div>
+    </div>
+
+
+
     <div id="outer_ia-cont">
       <h1>In Aussicht:</h1>
       <div class="slider-container_ia">
 
-        <button class="slider-button_ia" id="prev_ia">‹</button>
+        <!-- <button class="slider-button_ia" id="prev_ia">‹</button> -->
         <div class="slider-content_ia">
           <div class="slide_ia" id="slide1_ia">
             <h4>E-Violine</h4>
             <img src="images/e-violin.PNG" alt="">
           </div>
-          <div class="slide_ia" id="slide2_ia">
-            <h4>USB-PD für Milwaukee 12V Akkus</h4>
-            <img src="images/usb-pd.jpg" alt="">
-          </div>
-          <div class="slide_ia" id="slide3_ia">
-            <h4>Werkzeugkoffer Adapter für Milwaukee Packout</h4>
-            <img src="images/packout.png" alt="">
-          </div>
-
-
-
 
 
         </div>
-        <button class="slider-button_ia" id="next_ia">›</button>
+        <!-- <button class="slider-button_ia" id="next_ia">›</button> -->
 
       </div>
 
@@ -236,6 +263,28 @@
   });
 
   showSlide_ia(currentSlide_ia);
+
+
+  const slides_ib = document.querySelectorAll('.slide_ib');
+  let currentSlide_ib = 0;
+
+  const showSlide_ib = (index) => {
+    slides_ib.forEach((slide_ib, i) => {
+      slide_ib.style.display = i === index ? 'flex' : 'none';
+    });
+  };
+
+  document.getElementById('prev_ib').addEventListener('click', () => {
+    currentSlide_ib = (currentSlide_ib - 1 + slides_ib.length) % slides_ib.length;
+    showSlide_ib(currentSlide_ib);
+  });
+
+  document.getElementById('next_ib').addEventListener('click', () => {
+    currentSlide_ib = (currentSlide_ib + 1) % slides_ib.length;
+    showSlide_ib(currentSlide_ib);
+  });
+
+  showSlide_ib(currentSlide_ib);
 
 
 
